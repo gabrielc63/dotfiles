@@ -45,9 +45,12 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 2>/dev/null
 
+# Install starship
+brew install starship --quiet
+
 # Install fzf
 # https://github.com/junegunn/fzf#using-homebrew
-if ! exist fzf; then brew install fzf && "$(brew --prefix)"/opt/fzf/install --no-bash --key-bindings --completion --update-rc; fi
+brew install fzf
 
 # Install fd
 # https://github.com/sharkdp/fd#on-macos
@@ -86,6 +89,9 @@ brew install mise --quiet
 
 # Install git delta
 brew install git-delta --quiet
+
+# Install git extras
+brew install git-extras --quiet
 
 # Install jetbreains mono nerd font
 brew tap homebrew/cask-fonts
