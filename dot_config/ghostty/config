@@ -1,5 +1,6 @@
 font-family =  Maple Mono Medium
-font-size = 15
+font-size = 14
+font-thicken = true
 background-opacity = 0.95
 background-blur-radius = 20
 cursor-style = block
@@ -11,5 +12,6 @@ keybind = super+4=text:\x18\x34
 keybind = super+5=text:\x18\x35
 keybind = super+6=text:\x18\x36
 # theme = Dracula
-theme = "/Users/gabrielc/.local/share/nvim/lazy/tokyonight.nvim/extras/ghostty/tokyonight_night"
+theme = ChallengerDeep
+# theme = "/Users/gabrielc/.local/share/nvim/lazy/tokyonight.nvim/extras/ghostty/tokyonight_night"
 
