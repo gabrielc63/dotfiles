@@ -37,6 +37,8 @@ if ! [ -d ~/.oh-my-zsh ]; then
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
 
+source ~/.zshrc
+
 # Install zsh-autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 2>/dev/null
@@ -47,6 +49,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Install starship
 brew install starship --quiet
+
+source ~/.zshrc
 
 # Install fzf
 # https://github.com/junegunn/fzf#using-homebrew
@@ -92,6 +96,8 @@ brew install git-delta --quiet
 
 # Install git extras
 brew install git-extras --quiet
+
+brew install fastfetch --quiet
 
 # Install jetbreains mono nerd font
 brew tap homebrew/cask-fonts
